@@ -51,7 +51,7 @@ function BFS(x, y, h, w){
 			
 			if((nx >= 0) && (nx<h) && (ny>=0) && (ny<w) && (ady[nx][ny]='o') && !(visitado[nx][ny])){
 				var adyacente = new Estado( nx, ny , actual.d+1 );
-				Q.push( adyacente );
+				queue.push( adyacente );
 				prev[nx][ny] = actual;
 			}
 		}
